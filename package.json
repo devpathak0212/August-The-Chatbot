@@ -5,7 +5,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postinstall": "node -e \"try{require('fs').chmodSync('./node_modules/.bin/react-scripts', 0o755)}catch(e){console.log('Skipping chmod')}\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
