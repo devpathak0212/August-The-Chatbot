@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ==============================
+   Global Autumn Theme Variables
+   ============================== */
+:root {
+  --autumn-gradient: linear-gradient(135deg, #d35400, #e67e22, #f39c12);
+  --autumn-color: #d35400;
+  --autumn-light: #ffe0b2;
+  --autumn-bg: #fffaf5;
+}
+
+/* ==============================
+   Auth Pages (Signup / Signin)
+   ============================== */
+.auth-wrapper {
+  min-height: 100vh;
+  background: var(--autumn-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 900px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+}
+
+.auth-left {
+  flex: 1;
+  background: var(--autumn-gradient);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.tlt h1{
+  font-family: "Plaster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.we{
+  font-family: "Plaster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.logout{
+  color: var(--autumn-bg);
+  background-color: var(--autumn-gradient);
+  border: 1px solid var(--autumn-bg);
+  border-radius: 10px;
+  padding: 7px;
+  transition: 0.5s;
+}
+
+.logout:hover{
+  color: var(--autumn-color);
+  background-color: var(--autumn-bg);
+  border: 1px solid var(--autumn-color);
+}
+
+.auth-left h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.auth-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.auth-right h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-autumn {
+  color: var(--autumn-color);
+  cursor: pointer;
+}
+
+.text-aut{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ==============================
+   Buttons
+   ============================== */
+.btn-autumn {
+  background: linear-gradient(135deg, #d35400, #e67e22);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-autumn:hover {
+  background: linear-gradient(135deg, #b14400, #ca6f1e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn-autumn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary outline style (e.g. Logout button) */
+.btn-autumn-outline {
+  background: transparent;
+  color: var(--autumn-color);
+  border: 2px solid var(--autumn-color);
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+}
+
+.btn-autumn-outline:hover {
+  background: var(--autumn-color);
+  color: white;
+}
+
+/* ==============================
+   Chat Page
+   ============================== */
+.chat-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--autumn-bg);
+}
+
+.chat-header {
+  background: var(--autumn-gradient);
+  color: white;
+  /* padding: 15px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px 15px;
+  margin: 10px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  background: var(--autumn-light);
+  align-self: flex-end;
+  margin-left: auto;
+  border: 1px solid var(--autumn-color);
+  border-radius: 20px 20px 0px 20px;
+}
+
+.bot-msg {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  margin-right: auto;
+  border: 1px solid #000000;
+  border-radius: 0px 20px 20px 20px;
+}
+
+.chat-input {
+  border-top: 2px solid var(--autumn-color);
+  background: var(--autumn-light);
+}
